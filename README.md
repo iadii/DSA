@@ -1,3 +1,3 @@
 # DSA
 
-will push atleast one program a day to improve my skill
+Will try to push at least one program from basic cpp to DSA a day to improve my skill

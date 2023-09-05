@@ -20,6 +20,9 @@ int main()
         arr[start] = arr[end];
         arr[end] = temp;
 
+        // swap(arr[start], arr[end]);
+        
+
         start++;
         end--;
     }

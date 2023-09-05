@@ -21,7 +21,10 @@ int main()
         arr[end] = temp;
 
         // swap(arr[start], arr[end]);
-        
+
+        // arr[start] = arr[start] ^ arr[end];
+        // arr[end] = arr[start] ^ arr[end];
+        // arr[start] = arr[start] ^ arr[end];
 
         start++;
         end--;

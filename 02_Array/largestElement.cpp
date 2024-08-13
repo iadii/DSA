@@ -1,16 +1,23 @@
 #include<iostream>
 using namespace std;
-int main(){
-  int arr[5] = {2,3,5,7,4};
-  int arrSize = sizeof(arr)/sizeof(arr[0]);
-  
-  int flag = 0;
-  int largest = arr[0];
-  for (int i ; i<=arrSize ; i++ ) {
-    if(arr[i]>=largest){
-      largest = arr[i];
 
+int fn(int arr[], int size){
+    int bigg = arr[0];
+    for (int i = 0; i < size; i++)
+    {
+        if(arr[i] > bigg){
+            bigg = arr[i];
+
+        }
     }
-  }
-  cout<<"largest is "<<largest;
+    return bigg;
+}
+
+int main()
+{
+    int arr[] = {1, 8, 7, 56, 90};
+    int size = sizeof(arr)/sizeof(arr[0]);
+    int ans = fn(arr, size);
+    cout<<"biggest of em "<<ans;
+    return 0;
 }

@@ -2,7 +2,6 @@
 int main () {
    
     int row = 5;
-    int col = 6;
 
     for (int i = 0; i < row; i++)
     {

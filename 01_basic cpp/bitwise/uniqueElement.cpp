@@ -7,6 +7,7 @@ int main () {
         result ^= arr[i];
     
    }
+   
    cout<<result;
    return 0;
 }

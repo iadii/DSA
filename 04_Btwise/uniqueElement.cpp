@@ -5,10 +5,8 @@ int main () {
    int result = 0;
    for(int i = 0; i<7; i++){
         result ^= arr[i];
-    
    }
-   
-   
+
    cout<<result;
    return 0;
 }

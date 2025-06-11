@@ -18,7 +18,7 @@ int main () {
     // even -> last(right most) bit is always zero(0)
     // odd -> last(right most) bit is always one(1)
 
-    if(num & 1 == 0){
+    if((num & 1) == 0){
           cout<<"Given num is even"<<endl;
     }
     else{

@@ -39,5 +39,14 @@ int main () {
     // so it will return 5 * 4 = 20 byte
     cout<<"size of given array is: "<<sizeof(arr)<<endl;
 
+
+    // since given size is more but element is less 
+    // then in empty place it will be filled by zero
+    int arr2[5] = {12,13};
+    for(int i = 0; i < size; i++){
+
+        cout<<arr2[i]<<" ";
+    }
+
    return 0;
 }

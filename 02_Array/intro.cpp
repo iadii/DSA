@@ -20,10 +20,24 @@ int main () {
 
     int size = sizeof(arr)/sizeof(arr[0]);
 
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size; i++) 
     {
         cout<<arr[i]<<" ";
     }
-    
+    cout<<endl;
+
+    // address of an array
+    // both will give same output in case of array
+    cout<<"Address of given array is: "<<&arr<<endl;
+    cout<<"Address of given array is: "<<arr<<endl;
+
+
+    // size of an array
+    // sizeof returns the size of datatype
+    // mean int size is 4byte (based system architecture 64bit=4byte, 32bit=2byte)
+    // but in case of given array there is five elements in array
+    // so it will return 5 * 4 = 20 byte
+    cout<<"size of given array is: "<<sizeof(arr)<<endl;
+
    return 0;
 }

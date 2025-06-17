@@ -1,5 +1,4 @@
 #include<bits/stdc++.h>
-using namespace std;
 
 int linearSearch(int arr[], int size, int target){
 
@@ -7,6 +6,9 @@ int linearSearch(int arr[], int size, int target){
     {
         if(target == arr[i]){
             return i;
+
+            // multiple items return
+            // return make_pair(i, arr[i]); 
             break;
         }
         
@@ -24,6 +26,10 @@ int main () {
     int indexofVal = linearSearch(arr, size, target);
 
     cout<<"index of value is "<<indexofVal;
+
+  /*   pair<int, int> result = linearSearch(arr, size, target);
+    cout << "Index: " << result.first << ", Value: " << result.second << endl; */
+    
     
     return 0;
 }

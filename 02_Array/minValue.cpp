@@ -8,7 +8,7 @@ int minValue(int arr[], int size){
     int lowestVal = INT_MAX;
 
     for(int i = 0; i < size; i++){
-        if(arr[i] < lowestVal){ 
+        if(arr[i] < lowestVal){
             lowestVal = arr[i];
         }
     }

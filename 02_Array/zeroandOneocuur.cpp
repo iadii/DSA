@@ -2,7 +2,7 @@
 
 int main () {
     int arr[] = {0, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1};
-    // This array has 6 zeros and 9 ones (irregular occurrence)
+
 
     int countOne = 0;
     int countZero = 0;

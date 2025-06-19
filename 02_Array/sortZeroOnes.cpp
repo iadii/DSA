@@ -26,13 +26,32 @@ int byCounting(int arr[], int size){
     {
         cout<<arr[i]<<" ";
     }
+    cout<<endl;
 
     return 0;
 }
 
 int twoPointer(int arr[], int size){
 
-    
+    int left = 0;
+    int right = size - 1;
+
+    while(left < right){
+        if(arr[left] != 0 && arr[right] != 1){
+           int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+
+            // swap(arr[left], arr[right]);
+        }
+        left++;
+        right--;
+    }
+    for ( int i = 0; i < size; i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+
 }
 
 int main () {
@@ -43,6 +62,7 @@ int main () {
     int size = sizeof(arr) / sizeof(arr[0]);
 
     byCounting(arr, size);
+    twoPointer(arr, size);
 
    
 

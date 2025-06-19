@@ -22,6 +22,17 @@ int byCounting(int arr[], int size){
         arr[j] = 1;
     }
 
+    // easy way
+  /*   int index = 0;
+    while(countZero--){
+        arr[index] = 0;
+        index++;
+    }
+    while(countOne--){
+        arr[index] = 1;
+        index++;
+    } */
+
     for ( i = 0; i < size; i++)
     {
         cout<<arr[i]<<" ";
@@ -36,7 +47,7 @@ int twoPointer(int arr[], int size){
     int left = 0;
     int right = size - 1;
 
-    while(left < right){
+    while(left <= right){
         if(arr[left] != 0 && arr[right] != 1){
            int temp = arr[left];
             arr[left] = arr[right];
@@ -51,8 +62,9 @@ int twoPointer(int arr[], int size){
     {
         cout<<arr[i]<<" ";
     }
-
+    return 0;
 }
+
 
 int main () {
    
@@ -63,8 +75,6 @@ int main () {
 
     byCounting(arr, size);
     twoPointer(arr, size);
-
-   
 
    return 0;
 }

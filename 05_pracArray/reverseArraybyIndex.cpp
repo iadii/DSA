@@ -28,8 +28,9 @@ int main(){
     int arr[] = {10, 20, 30, 40, 50, 60};
 
     int size = sizeof(arr) / sizeof(arr[0]);
+    int targetIndex = 2;
 
-    reverseArr(arr, size, 2);
+    reverseArr(arr, size, targetIndex);
 
     return 0;
 }

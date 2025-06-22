@@ -10,5 +10,20 @@ int main () {
         temp[i] = arr[size - k + i];
    }
 
+   for(int i = size - 1; i > 0; i--){
+        arr[i] = arr[i - k];
+   }
+
+   for (int i = 0; i < k; i++)
+   {
+        arr[i] = temp[i];
+   }
+   
+   for (int  i = 0; i < size; i++)
+   {
+        cout<<arr[i]<<" ";
+   }
+   
+
    return 0;
 }          

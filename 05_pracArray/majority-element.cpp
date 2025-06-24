@@ -11,33 +11,31 @@
     Input: ‘N’ = 9 ‘A’ = [2, 2, 1, 3, 1, 1, 3, 1, 1]
  */
 #include<bits/stdc++.h>
-int majorityElement(int arr[], int size){
-
+void majorityElement(int arr[], int size) {
     int n = size / 3;
-    int occr = 0;
+    // Sort the array to make duplicate checks easy
+    sort(arr, arr + size);
 
-    for (int i = 0; i < size; i++)
-    {
-        for (int j = 0; j < size; j++)
-        {
-            if((arr[i] == arr[j])){
+    for (int i = 0; i < size; i++) {
+        // Skip duplicates
+        if (i > 0 && arr[i] == arr[i - 1]) continue;
+        int occr = 0;
+        for (int j = 0; j < size; j++) {
+            if (arr[i] == arr[j]) {
                 occr++;
             }
         }
-        if(occr > n){
-        return arr[i];
+        if (occr > n) {
+            cout << arr[i] << " ";
+        }
     }
-    }
-
-    
-    
 }
+
 int main () {
     int arr[] = {2, 2, 1, 3, 1, 1, 3, 1, 1};
-   int size = sizeof(arr) / sizeof(arr[0]);
+    int size = sizeof(arr) / sizeof(arr[0]);
 
-   int val = majorityElement(arr, size);
-   
-   cout<<"Majority element is: "<<val;
-   return 0;
+    cout << "Majority element(s): ";
+    majorityElement(arr, size);
+    return 0;
 }

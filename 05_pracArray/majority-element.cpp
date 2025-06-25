@@ -11,6 +11,8 @@
     Input: ‘N’ = 9 ‘A’ = [2, 2, 1, 3, 1, 1, 3, 1, 1]
  */
 #include<bits/stdc++.h>
+using namespace std;
+
 void majorityElement(int arr[], int size) {
     int n = size / 3;
     // Sort the array to make duplicate checks easy
@@ -31,11 +33,44 @@ void majorityElement(int arr[], int size) {
     }
 }
 
+int majorityElementHashMap(int arr[], int size) {
+    int n = size / 3;
+    unordered_map<int, int> freq;
+    vector<int> result;
+
+    // Count frequencies
+    for (int i = 0; i < size; i++) {
+        freq[arr[i]]++;
+    }
+
+    // Collect elements appearing more than n times
+    for (auto &p : freq) {
+        if (p.second > n) {
+            result.push_back(p.first);
+        }
+    }
+
+    // Sort result as required
+    sort(result.begin(), result.end());
+
+    for (int x : result) {
+        cout << x << " ";
+    }
+    return 0;
+}
+
 int main () {
     int arr[] = {2, 2, 1, 3, 1, 1, 3, 1, 1};
+
     int size = sizeof(arr) / sizeof(arr[0]);
 
-    cout << "Majority element(s): ";
+    cout << "Majority element(s) using sorting: ";
     majorityElement(arr, size);
+    cout << endl;
+
+    cout << "Majority element(s) using hashmap: ";
+    majorityElementHashMap(arr, size);
+    cout << endl;
+
     return 0;
 }

@@ -14,6 +14,7 @@ int main()
         if(arr[left] == 0){
             swap(arr[left], arr[right]);
             right--;
+            
         }
         left++;
     }

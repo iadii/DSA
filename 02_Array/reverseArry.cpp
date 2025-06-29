@@ -14,6 +14,7 @@ int main () {
         arr[right] = temp;
 
         left++;
+        
         right--;
     }
 

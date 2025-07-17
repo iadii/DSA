@@ -1,4 +1,20 @@
 #include<bits/stdc++.h>
+bool search(int arr[][3], int row, int col, int element){
+
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            if(element == arr[i][j]){
+                
+                return true;
+                
+            }
+        }
+        
+    }
+    return -1;
+}
 
 int main () {
    
@@ -10,18 +26,13 @@ int main () {
 
     int element = 12;
     
-    for (int i = 0; i < 3; i++)
-    {
-        for (int j = 0; j < 3; j++)
-        {
-            if(element == arr[i][j]){
-                
-                cout<<"element found at place "<<i<<j;
-                
-            }
-        }
-        
+    bool val = search(arr, 3, 3, element);
+    if(val == true){
+        cout<<"Element found";
+    }else{
+        cout<<"Element not found";
     }
+    
     
    return 0;
 }

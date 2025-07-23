@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+
 int main () {
    int arr[3][3] = {
         {2, 4, 6},

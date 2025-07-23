@@ -1,6 +1,4 @@
-#include <iostream>
-#include <vector>
-using namespace std;
+#include <bits/stdc++.h>
 
 int main() {
     int rows, cols;

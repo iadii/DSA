@@ -15,7 +15,10 @@ int dynamic_Arr(int arr[],int num){
 int main () {
    int num;
    cin>>num;
-   int* arr = new int[num]; // Dynamically allocate array of size 'num'
-   dynamic_Arr(arr, num); // Call function to input and print array
+   // Dynamically allocate array of size 'num'
+   // if we dont put any element then default value would be 0 or garbage value
+   int* arr = new int[num]; 
+   dynamic_Arr(arr, num); 
+   
    return 0;
 }

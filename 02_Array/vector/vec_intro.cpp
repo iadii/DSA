@@ -29,5 +29,6 @@ int main () {
     // capacity of vector
     // it means how many elemnt it can currently hold
     cout<<arr.capacity();
+    
    return 0;
 }

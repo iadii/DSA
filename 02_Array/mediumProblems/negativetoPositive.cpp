@@ -3,7 +3,6 @@
 int modify(int arr[], int size){
 
     int left = 0;
-    // int right = 0;
     int temp;
 
     for (int i = 0; i < size; i++)

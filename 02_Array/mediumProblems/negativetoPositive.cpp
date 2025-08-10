@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 
-int modify(int arr[], int size){
+int modify(vector<int> arr, int size){
 
     int left = 0;
     int temp;
@@ -25,13 +25,13 @@ int modify(int arr[], int size){
 int main () {
    
 
-    int arr[] = {
+    vector<int> arr = {
         23, -7, 12, -10, -11, 40, 60
     };
-    int size = sizeof(arr) / sizeof(arr[0]);
 
 
-    modify(arr, size);
+
+    modify(arr, arr.size());
 
    return 0;
 }

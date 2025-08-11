@@ -6,7 +6,7 @@ int sortCol(vector<int> arr, int size)
     int left = 0;
     int right = size-1;
     int i = 0;
-    while(i <= 2)
+    while(i <= right)
         {
             if(arr[i] == 0){
                 swap(arr[left], arr[i]);
@@ -32,8 +32,8 @@ int main()
 
     vector<int> arr =
         {
-            // 2, 0, 2, 1, 1, 0
-            2,0,1
+            2, 0, 2, 1, 1, 0
+            // 2,0,1
         };
 
     sortCol(arr, arr.size());

@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <bits/stdc++.h>   
 
 int sortCol(vector<int> arr, int size)
 {

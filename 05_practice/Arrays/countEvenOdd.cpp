@@ -16,7 +16,7 @@ int count(vector<int> arr){
 int main () {
    
     vector<int> arr = {
-        1, 2, 3, 4, 5
+       2, 7, 34, 21, 5, 8, 19, 3, 45, 27, 10, 16, 6, 38, 2
     };
 
     count(arr);

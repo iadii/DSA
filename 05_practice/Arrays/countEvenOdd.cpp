@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+int count(vector<int> arr){
+
+    int countEven = 0;
+    int countOdd = 0;
+    for (int i = 0; i < arr.size(); i++){
+
+        (arr[i] % 2 == 0) ? countEven++ : countOdd++; 
+    }
+
+    cout<<"Count of even num is: "<<countEven<<endl;
+    cout<<"Count of odd num is: "<<countOdd<<endl;
+    
+    return 0;
+}
+int main () {
+   
+    vector<int> arr = {
+        1, 2, 3, 4, 5
+    };
+
+    count(arr);
+   return 0;
+}

@@ -7,8 +7,6 @@ Output: [[7,4,1],[8,5,2],[9,6,3]]
  #include<bits/stdc++.h>
  int rotate(vector<vector<int>> mat){
     int row = mat.size();
-    int left = 0;
-    int right = mat[0].size() -1;
 
     for(int i = 0; i < row; i++){
         for (int j = i + 1; j < row; ++j) {

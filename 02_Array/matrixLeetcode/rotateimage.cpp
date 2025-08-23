@@ -28,9 +28,12 @@ Output: [[7,4,1],[8,5,2],[9,6,3]]
     
     for (int i = 0; i < row; i++)
     {
+        cout<<"[ ";
         for(int j = 0; j < row; j++){
             cout<<mat[i][j]<<" ";
         }
+        cout<<"]";
+        cout<<endl;
     }
     
     return 0;

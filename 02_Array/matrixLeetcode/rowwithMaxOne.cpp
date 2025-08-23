@@ -30,7 +30,7 @@ vector<int> rowMaxOne(vector<vector<int>> mat)
 int main()
 {
 
-    // vector<vector<int>> mat = {{0, 0, 0}, {0, 1, 1}, {1, 1, 1}};
+    // vector<vector<int>> mat = {{0,  0, 0}, {0, 1, 1}, {1, 1, 1}};
     vector<vector<int>> mat = {{0, 0, 0, 1}, {1, 1, 0, 0}, {0, 1, 1, 1}, {1, 1, 1, 1}};
 
     rowMaxOne(mat);

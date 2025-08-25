@@ -31,7 +31,7 @@ Output: [[7,4,1],[8,5,2],[9,6,3]]
             cout<<mat[i][j]<<" ";
         }
         cout<<"]";
-        cout<<endl;
+        cout<<endl; 
     }
     
     return 0;

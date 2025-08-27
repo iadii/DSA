@@ -10,9 +10,9 @@ int binarySearch(vector<int> arr, int target){
             return mid;
         }
         if(target < arr[mid]){
-            end = mid;
+            end = mid - 1;
         }else{
-            start = mid;
+            start = mid + 1;
         }
     }
     return -1;

@@ -7,7 +7,13 @@ int firstOccurence(vector<int> arr, int target) {
     int ans = -1; // Variable to store the result index (if found)
 
     while (start <= end) {
-        int mid = int((start + end)/2);
+        // this might make integer overflow
+        // int mid = int((start + end)/2);
+
+        // best practice
+        // this won't cause integer overflow
+        int mid = start + (end - start) /2;
+
 
         // Now, check value at mid index and compare with target
         if (target == arr[mid]) {

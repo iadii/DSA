@@ -17,10 +17,10 @@ int firstLastOccurrence(vector<int> arr, int target){
             firstOccurence = mid;
             e1 = mid - 1;
         }
-        if(target < arr[mid]){
+        else if(target < arr[mid]){
             e1 = mid -1;
         }
-        if(target > arr[mid]){
+        else if(target > arr[mid]){
             s1 = mid + 1;
         }
     }
@@ -32,10 +32,10 @@ int firstLastOccurrence(vector<int> arr, int target){
             lastOccureence = mid;
             s2 = mid + 1;
         }
-        if(target < arr[mid]){
+        else if(target < arr[mid]){
             e2 = mid -1;
         }
-        if(target > arr[mid]){
+        else if(target > arr[mid]){
 
             s2 = mid + 1;
         }
@@ -47,7 +47,7 @@ int firstLastOccurrence(vector<int> arr, int target){
 int main () {
 //    vector<int> arr = {10, 20, 30, 30, 30, 30, 40, 50};
    vector<int> arr = {1, 3, 5, 5, 5, 5, 7, 123, 125};
-    int target = 7;
+    int target = 5;
     firstLastOccurrence(arr, target);
    return 0;
 }

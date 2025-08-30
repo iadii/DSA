@@ -27,7 +27,7 @@ int main () {
     vector<int> arr = {1,2,3,4,6,7,8,9};
 
     int index = missingElement(arr);
-    cout<<"missing element should be at "<<index;
+    cout<<"missing element should be at index "<<index <<" and element is "<<arr[index] -1;
    
    return 0;
 }

@@ -1,7 +1,8 @@
 #include<bits/stdc++.h>
 int missingElement(vector<int> arr){
     int start = 0;
-    int end = arr.size() - 1;
+    // int end = arr.size() - 1;
+    int end = arr.size();
     int ans = -1;
     while(start <= end){
         int mid = start + (end - start)/2;
@@ -20,11 +21,19 @@ int missingElement(vector<int> arr){
             ans = mid;
             end = mid - 1;
         }
+
+    }
+    if (ans == -1) {
+        // All elements are present, missing one is at the end
+        return arr.size() + 1;
     }
     return ans;
 }
 int main () {
-    vector<int> arr = {1,2,3,4,6,7,8,9};
+    // vector<int> arr = {1,2,3,4,6,7,8,9};
+
+    // our code is handling every case but got crashed in case of last element 
+    vector<int> arr = {1,2,3,4,5,6,7,8};
 
     int index = missingElement(arr);
     cout<<"missing element should be at index "<<index <<" and element is "<<arr[index] -1;

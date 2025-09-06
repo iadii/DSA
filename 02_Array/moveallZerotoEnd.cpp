@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
    int arr[] = {
-    1, 2, 0, 3, 5, 0, 4
+    1, 2, 0, 3, 0, 5, 0, 4
    };
    int size = sizeof(arr)/sizeof(arr[0]);
    int left = 0;
@@ -16,7 +16,9 @@ int main()
             right--;
             
         }
-        left++;
+        else{
+            left++;
+        }
     }
 
     for(int i = 0; i < size; i++){

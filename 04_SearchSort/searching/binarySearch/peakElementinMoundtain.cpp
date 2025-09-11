@@ -1,14 +1,22 @@
+// peak element in mountain in O(logn)
 #include<bits/stdc++.h>
 int peakElement(vector<int> arr){
 
     int start = 0;
     int end = arr.size() -1;
-    int ans = -1;
 
-    while(start <= end){
-         
+    while(start < end){
+
+        int mid = start + (end - start) /2;
+         if(arr[mid] < arr[mid + 1]){
+
+            start = mid + 1;
+         }
+         else {
+            end = mid;
+         }
     }
-    return start;
+    return end;
 }
 int main () {
    

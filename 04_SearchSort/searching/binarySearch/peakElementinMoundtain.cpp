@@ -5,6 +5,7 @@ int peakElement(vector<int> arr){
     int start = 0;
     int end = arr.size() -1;
 
+    // no need of <= because we will stuck in infinite loop
     while(start < end){
 
         int mid = start + (end - start) /2;

@@ -13,6 +13,10 @@ int peakElement(vector<int> arr){
             start = mid + 1;
          }
          else {
+            // there will only 2 condition 
+            // either i == i+1 or i > i+1(in peak we dont need to worry about i == i+ 1)
+            // if i > i+1 and already checked i > i-1 (by iteration)
+            // so we will return that element
             end = mid;
          }
     }

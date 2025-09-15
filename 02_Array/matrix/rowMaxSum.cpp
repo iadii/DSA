@@ -8,7 +8,6 @@ int main() {
         {8, 10, 102},
         {14, 16, 18}
     };
-    
     // Get actual dimensions from matrix
     int rows = matrix.size();
     int cols = matrix[0].size();

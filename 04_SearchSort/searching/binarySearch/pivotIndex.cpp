@@ -3,7 +3,12 @@ int pivotIndex(vector<int> arr){
 
     int start = 0;
     int end = arr.size() -1;
-    int ans = 0;
+    int ans = -1;
+
+    // Handle edge cases
+    // if array size is 1
+    if(arr.size() == 1) return 0;
+
     while(start <= end){
         int mid = start + (end - start) /2;
 

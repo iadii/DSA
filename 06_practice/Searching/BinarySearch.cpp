@@ -16,9 +16,7 @@ int bSearch(vector<int> arr, int target){
         else if (arr[mid] > target){
             e = mid - 1;
         }
-
     }
-
     return  -1;
 }
 int main () {

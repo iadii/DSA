@@ -11,7 +11,7 @@ int multiD(vector <vector<int>> arr){
         cout<<" }";
         cout<<endl;
     }
-    
+    return 0;
 }
 int main () {
    

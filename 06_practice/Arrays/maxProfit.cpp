@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-using namespace std;
 
 // LeetCode 121: Best Time to Buy and Sell Stock
 // Find maximum profit from single buy-sell transaction

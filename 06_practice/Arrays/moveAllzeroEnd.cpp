@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-void zero(vector<int> arr){
+void zero(vector<int> &arr){
 
     int left = 0;
     int right = arr.size() - 1;

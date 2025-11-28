@@ -1,6 +1,22 @@
 #include<bits/stdc++.h>
 void zero(vector<int> arr){
 
+    int left = 0;
+    int right = arr.size() - 1;
+
+    while(left <= right){
+        if(arr[left] == 0){
+            swap(arr[left], arr[right]);
+            right--;
+        }
+        else{
+            left++;
+        }
+    }
+
+    for(int val: arr){
+        cout<<val<<",";
+    }
 }
 int main () {
    

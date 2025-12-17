@@ -12,7 +12,7 @@ void zero(vector<int> &arr){
         else{
             left++;
         }
-    }
+    } 
 
     for(int val: arr){
         cout<<val<<",";

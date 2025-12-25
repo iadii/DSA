@@ -15,7 +15,7 @@ vector<int> moveZero(vector<int> arr){
         cout<<val<<" ";
     }
     
-    return {0};
+    return {};
 }
 int main () {
    

@@ -11,7 +11,7 @@ vector <int> rightRotate(vector <int> arr){
         cout<<val<<" ";
     }
     
-    return {0};
+    return {};
 }
 vector <int> leftRotate(vector <int> arr){
 

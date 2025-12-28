@@ -8,6 +8,7 @@ Output: [[7,4,1],[8,5,2],[9,6,3]]
  int rotate(vector<vector<int>> mat){
     int row = mat.size();
 
+  // transpose
     for(int i = 0; i < row; i++){
         for (int j = i + 1; j < row; ++j) {
         swap(mat[i][j], mat[j][i]);
@@ -15,6 +16,7 @@ Output: [[7,4,1],[8,5,2],[9,6,3]]
         
     }
 
+  // reverse
    for (int i = 0; i < row; ++i) {
         int left = 0, right = row - 1;
         while (left < right) {
@@ -23,7 +25,8 @@ Output: [[7,4,1],[8,5,2],[9,6,3]]
             right--;
         }
     }
-    
+
+  // print
     for (int i = 0; i < row; i++)
     {
         cout<<"[ ";

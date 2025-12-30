@@ -2,19 +2,16 @@
 using namespace std;
 
 int diagonalSum(vector<vector<int>> arr){
-    int row = arr.size();           // number of rows
-    int col = arr[0].size();        // number of columns
+    int row = arr.size();
+    int col = arr[0].size();
     int sum = 0;
 
-    // Add primary diagonal (top-left to bottom-right)
     for(int i = 0; i < row; i++){
         sum += arr[i][i];
     }
 
-    // Add secondary diagonal (top-right to bottom-left)
-    // Avoid counting center element twice if matrix is odd-sized
     for(int i = 0; i < row; i++){
-        if(i != row - 1 - i){  // Skip if it's the center element
+        if(i != row - 1 - i){
             sum += arr[i][row - 1 - i];
         }
     }
@@ -31,7 +28,6 @@ int main() {
 
     int result = diagonalSum(arr);
     cout << "Sum of diagonal elements: " << result << endl;
-    // Output: 1 + 3 + 5 + 7 + 9 = 25
 
     return 0;
 }

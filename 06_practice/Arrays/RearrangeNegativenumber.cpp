@@ -2,7 +2,7 @@
 vector<int> ReArrange(vector<int> arr){
     vector<int> neg, vector<int> pos;
     for(int i = 0; i < arr.size(); i++){
-        
+        if()
     }
 }
 int main () {

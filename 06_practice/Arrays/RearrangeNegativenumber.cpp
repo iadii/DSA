@@ -14,6 +14,7 @@ vector<int> ReArrange(vector<int> arr){
     for(int i:neg){
         cout<<i<<" ";
     }
+    return {}
 }
 int main () {
    

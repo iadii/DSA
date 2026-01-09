@@ -11,7 +11,7 @@ vector<int> rowMaxOne(vector<vector<int>> mat){
 
         for(int j = 0; j < col; j++) {
             if(arr[i][j] == 1){
-                coun++;
+                count++;
             }
         }
         if(count > oneCount){
@@ -27,7 +27,7 @@ vector<int> rowMaxOne(vector<vector<int>> mat){
 
 int main () {
    
-    vector<vector<mat>> {
+    vector<vector<int>> mat = {
         {1, 0, 0, 0},
         {0, 1, 1, 0},
         {0, 1, 1, 0},

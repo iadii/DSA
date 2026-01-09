@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 vector<int> rowMaxOne(vector<vector<int>> mat){
     
-    int row = arr.size();
-    int col = arr[0].size();
+    int row = mat.size();
+    int col = mat[0].size();
 
     for(int i = 0; i < row; i++){
         int count = 0;
@@ -10,7 +10,7 @@ vector<int> rowMaxOne(vector<vector<int>> mat){
         int rowsNo = - 1;
 
         for(int j = 0; j < col; j++) {
-            if(arr[i][j] == 1){
+            if(mat[i][j] == 1){
                 count++;
             }
         }

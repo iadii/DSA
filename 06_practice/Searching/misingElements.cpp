@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
-vector<int> missigElement(vector<int> arr, target)
+vector<int> missigElement(vector<int> arr, target){
+    
+}
 int main () {
      vector<int> arr = {1,2,3,4,6,7,8};
 

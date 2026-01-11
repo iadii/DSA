@@ -17,7 +17,7 @@ vector<int> binarySearch(vector<int> arr, int target){
         }
     }
 
-    return {}
+    return {};
 }
 int main () {
    

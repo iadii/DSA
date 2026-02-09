@@ -16,7 +16,7 @@ vector<int> lastOccurrence(vector<int> arr, int target){
         else if(target > arr[mid]){
             s = mid + 1;
         }
-    }
+    } 
     return { ans };
 }
 int main () {

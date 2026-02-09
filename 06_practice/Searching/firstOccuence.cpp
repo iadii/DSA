@@ -3,8 +3,8 @@ vector<int> firstOccurrence(vector<int> arr, int target){
     int s = 0;
     int e = arr.size() - 1;
     int ans = 0;
-    while(s < e){
-        int mid = e + (s - e)/2;
+    while(s <= e){
+        int mid = s + (e - s) / 2;
 
         if(arr[mid] == target){
             ans = mid;

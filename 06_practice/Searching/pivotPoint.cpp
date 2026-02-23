@@ -23,7 +23,7 @@ vector<int> pivotElement(vector<int> arr){
       return {-1};
 }
 int main () {
-   vector<int> arr = {12, 14, 16, 2, 4, 6, 8};
+   vector<int> arr = {12, 14, 16, 2, 4, 6, 8, 10};
    vector<int> idx = pivotElement(arr);
    cout<<"index of pivot element is: "<<idx[0]<<" and element is: "<<arr[idx[0]];
    return 0;

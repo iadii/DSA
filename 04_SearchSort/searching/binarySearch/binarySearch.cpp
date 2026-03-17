@@ -25,3 +25,4 @@ int main () {
     cout<<target<<" is at index: " <<index;
    return 0;
 }
+

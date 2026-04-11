@@ -13,7 +13,7 @@ vector<int> usingTwoPointer (vector <int> arr){
     return {-1};
 }
 int main () {
-   vector<int> arr = {4, 1, 2, 1, 2, 5, 5};
+   vector<int> arr = {4, 1, 2, 1, 2, 5, 5}; 
    vector<int> val = usingTwoPointer(arr);
    cout<<"unique element is : "<<val[0]<<" ";
    return 0;

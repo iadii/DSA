@@ -43,6 +43,6 @@ int main () {
     };
 
     int index = pivotIndex(arr);
-    cout<<"pivotted index is at index "<<index<<" and element is "<<arr[index];
+    cout<<"pivotted element is at index "<<index<<" and element is "<<arr[index];
    return 0;
 }

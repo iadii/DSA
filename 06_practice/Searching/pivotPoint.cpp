@@ -2,19 +2,19 @@
 vector<int> pivotElement(vector<int> arr){
    int s = 0;
    int e = arr.size() - 1;
-   int ans = -1;
+   int ans = -1; 
+   if(arr.size() == 1) return 0;
    while(s <= e){
-    if(s == e){
-        ans = s;
-    }
     int mid = s + (e - s)/2;
-    if(arr[mid] < arr[mid - 1]){
+    if(arr[mid] <= arr[mid - 1]){
         ans = mid -1 ;
+        return {ans};
     }
-    else if(arr[mid] > arr[mid + 1]){
+     if(arr[mid] > arr[mid + 1]){
         ans = mid;
+        return {ans};
     }
-    else if(arr[mid] > arr[s]){
+     if(arr[mid] > arr[s]){
         s = mid + 1;
     }
     else if(arr[mid] < arr[s]){ 

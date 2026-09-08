@@ -10,7 +10,7 @@ vector<int> pivotElement(vector<int> arr){
         ans = mid -1 ;
         return {ans};
     }
-     if(arr[mid] > arr[mid + 1]){
+     if(arr[mid] > arr[mid + 1]){`
         ans = mid;
         return {ans};
     }

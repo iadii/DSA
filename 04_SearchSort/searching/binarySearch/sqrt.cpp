@@ -5,10 +5,14 @@ int sqr(int x){
     int ans = 0;
     while(low <= high){
         int mid = low + (high - low)/2;
-        if((long long)mid * mid == x){
+        // leet code because some long number  multiplication will return very long answer
+        // thats why we type cast in long long
+        // if((long long)mid * mid == x){
+        if(mid * mid == x){
             return mid;
         }
-        else if((long long)mid * mid >= x){
+        // else if((long long)mid * mid >= x){
+        else if(mid * mid >= x){
             high = mid - 1;
         }
         else {

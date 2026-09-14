@@ -1,12 +1,9 @@
 #include<bits/stdc++.h>
-int sqr(int x){
+double sqr(int x, int precision){
     int low = 0;
     int high = x;
     int ans = 0;
     while(low <= high){
-        // leet code because some long number  multiplication will return very long answer
-        // thats why we type cast in long long
-        // long long int mid = low + (high - low)/2;
         int mid = low + (high - low)/2;
         if(mid * mid == x){
             return mid;
@@ -19,11 +16,19 @@ int sqr(int x){
             low = mid + 1;
         }
     }
-    return ans;
+    double result = ans;
+    double step = 0.1;
+    for (int i = 0; i < precision; i++) {
+        while ((result + step) * (result + step) <= x) {
+            result += step;
+        }
+        step /= 10;
+    }
+    return result;
 }
 int main () {
-   int x = 48;
-   int ans = sqr(x);
+   int x = 47;
+   double ans = sqr(x, 3);
    cout<<"square root of: "<<x<<" is "<<ans;
    return 0;
 }

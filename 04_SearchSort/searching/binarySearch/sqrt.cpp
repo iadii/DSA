@@ -5,10 +5,10 @@ int sqr(int x){
     int ans = 0;
     while(low <= high){
         int mid = low + (high - low)/2;
-        if((mid * mid) == x){
+        if((long long)mid * mid == x){
             return mid;
         }
-        else if((mid * mid) >= x){
+        else if((long long)mid * mid >= x){
             high = mid - 1;
         }
         else {

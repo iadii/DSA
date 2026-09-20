@@ -5,6 +5,7 @@ int dvd(int x, int y){
     int ans = 0;
     while(low <= h){
         int mid = low + (h - low) /2;
+        cout<<"low: "<<low<<" high: "<<h<<endl;
         if(y * mid == x){
             return mid;
         }

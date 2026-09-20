@@ -20,9 +20,18 @@ int dvd(int x, int y){
     return ans;
 }
 int main () {
-   int x = 48;
+   int x = -48;
    int y = 5;
-   int ans = dvd(x, y);
-   cout<<"Division of "<<x<<" and "<<y<<" is: "<<ans;
+    // to handle -ve number.
+    // abs() fun converts -ve num to +ve num
+    int ans = dvd(abs(x), abs(y));
+    // return ans will be +ve. so to send user if needed to send -ve of +ve
+    // -ve/-ve = +ve, +ve/+ve=+ve, +ve/-ve = -ve, -ve/+ve = -ve
+    if((x>0 && y>0) || (x<0 && y<0)){
+        cout<<"Division of "<<x<<" and "<<y<<" is: "<<ans;
+    }
+    else{
+        cout<<"Division of "<<x<<" and "<<y<<" is: "<<-ans;
+    }
    return 0;
 }

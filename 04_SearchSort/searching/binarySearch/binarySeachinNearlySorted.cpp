@@ -2,6 +2,7 @@
 int binarySearch(vector<int> arr, int target){
     int s = 0;
     int e = arr.size() - 1;
+    int n = arr.size() - 1;
 
     while(s <= e){
         int mid = s + (e - s)/2;
@@ -11,7 +12,7 @@ int binarySearch(vector<int> arr, int target){
         else if(arr[mid-1] > 0 && arr[mid - 1] ==target){
             return mid - 1;
         }
-        else if(arr[mid + 1] ==target){
+        else if(arr[mid + 1] < n && arr[mid + 1] == target){
             return mid + 1;
         }
         else if (target > arr[mid]){

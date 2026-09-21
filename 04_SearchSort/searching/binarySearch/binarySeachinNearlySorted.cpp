@@ -8,7 +8,7 @@ int binarySearch(vector<int> arr, int target){
         if(arr[mid] ==target){
             return mid;
         }
-        else if(arr[mid - 1] ==target){
+        else if(arr[mid-1] > 0 && arr[mid - 1] ==target){
             return mid - 1;
         }
         else if(arr[mid + 1] ==target){

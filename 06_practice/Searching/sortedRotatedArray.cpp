@@ -15,7 +15,7 @@ int pivotElement(vector<int> arr){
          ans = mid - 1;
          return ans;
       }
-
+     
       if(mid < e && arr[mid] > arr[mid + 1]){
          ans = mid;
          return ans;

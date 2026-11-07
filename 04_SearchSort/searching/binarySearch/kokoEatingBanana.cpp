@@ -11,6 +11,7 @@ bool canFinish(const vector<int>& piles, int h, int k) {
         int e = *max_element(piles.begin(), piles.end());
         int ans = 0;
         while(s <= e){
+            // another way to write (s+e)/2
             int mid = (s+e)>>1;
             int k = mid;
             if(canFinish(piles, h, k)){
@@ -19,7 +20,7 @@ bool canFinish(const vector<int>& piles, int h, int k) {
             }
             else{
                 s = mid + 1;
-            }
+            } 
         }
         return ans;
     }
@@ -30,4 +31,4 @@ int main () {
    int ans = minEatingSpeed(piles, h);
     cout << "Koko should eat " << ans << " bananas per hour to finish before the guard returns.";
    return 0;
-}
+} 

@@ -124,6 +124,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 <p align="center">
-  Developed with ❤️ by <a href="https://github.com/adiivats">adiivats</a>
+  Developed with ❤️ by <a href="https://github.com/iadii">iadii</a>
 </p>
 
